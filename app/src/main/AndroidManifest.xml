@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.creditscoreinfo.report.check">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:networkSecurityConfig"
+        android:name=".BaseApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.creditscoreinfo.report.check.activity.PolicyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.CreditFinalScoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.EmiCalculatedActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.OfflineScore3Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.OfflineScore2Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.TipsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.SkipActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.QurekaInterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.EmiCalculaterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.CreditSubTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.CreditMainTipsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.CreditScoreOfflineActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.OfflineScoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.CreditDesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.CreditOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.HomeScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.creditscoreinfo.report.check.activity.ExitActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.creditscoreinfo.report.check.activity.SplashActivity"
+          android:theme="@style/splashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.creditscoreinfo.report.check.activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name=".RenCheckService"
+            android:enabled="true"
+            android:launchMode="singleInstance"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.NATIVE_AD_DEBUGGER_ENABLED"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

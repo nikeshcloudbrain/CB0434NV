@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154588236695",
+    "project_id": "credit-score-check-repor-b71a9",
+    "storage_bucket": "credit-score-check-repor-b71a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154588236695:android:406e094888910c64fdd2d2",
+        "android_client_info": {
+          "package_name": "com.creditscoreinfo.report.check"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154588236695-8ghg8qj8k3agu2fcnvmcp7qpok7u2ud7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgaGRXB6f5FYY21W7ctnNknAI_uzqYmog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154588236695-8ghg8qj8k3agu2fcnvmcp7qpok7u2ud7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
